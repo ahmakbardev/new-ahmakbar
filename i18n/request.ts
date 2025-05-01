@@ -14,12 +14,25 @@ export default getRequestConfig(async ({ requestLocale }) => {
   const featureMessages = (
     await import(`@/dictionaries/feature-section/${locale}.json`)
   ).default;
+  const showcaseMessages = (
+    await import(`@/dictionaries/showcase/${locale}.json`)
+  ).default;
+
+  const projectsMessages = (
+    await import(`@/dictionaries/projects/${locale}.json`)
+  ).default;
+  const edutoriumMessages = (
+    await import(`@/dictionaries/projects/edutorium/${locale}.json`)
+  ).default;
 
   return {
     locale,
     messages: {
       ...heroMessages,
       ...featureMessages,
+      ...showcaseMessages,
+      ...projectsMessages,
+      ...edutoriumMessages,
     },
   };
 });

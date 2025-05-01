@@ -1,0 +1,18 @@
+{
+  "projects": {
+    "0": {
+      "slug": "edutorium",
+      "title": "Edutorium",
+      "type": "Web Apps",
+      "desc": "Modern UI kit for rapid development.",
+      "image": "/projects/edutorium.webp"
+    },
+    "1": {
+      "slug": "shop-dashboard",
+      "title": "Shop Dashboard",
+      "type": "Web App",
+      "desc": "Track sales and analytics in real-time.",
+      "image": "/designs/b.png"
+    }
+  }
+}

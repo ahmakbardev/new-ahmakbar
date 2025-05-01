@@ -1,0 +1,18 @@
+{
+  "projects": {
+    "0": {
+      "slug": "edutorium",
+      "title": "Edutorium",
+      "type": "Aplikasi Web",
+      "desc": "UI kit modern untuk pengembangan cepat.",
+      "image": "/projects/edutorium.webp"
+    },
+    "1": {
+      "slug": "shop-dashboard",
+      "title": "Dashboard Toko",
+      "type": "Aplikasi Web",
+      "desc": "Pantau penjualan dan analitik secara real-time.",
+      "image": "/designs/b.png"
+    }
+  }
+}

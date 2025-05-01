@@ -47,7 +47,7 @@ export default function LanguageSwitcher({
       <DropdownMenu.Trigger asChild>
         <button
           className={clsx(
-            "hidden md:flex transition-all text-white px-4 font-bold duration-300 items-center justify-center gap-2",
+            "hidden md:flex transition-all text-white px-4 font-bold cursor-pointer  duration-300 items-center justify-center gap-2",
             isScrolled
               ? "bg-white/10 backdrop-blur-lg rounded-full py-5 mt-3 mx-auto shadow-md"
               : "py-3",

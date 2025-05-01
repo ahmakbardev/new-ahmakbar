@@ -1,0 +1,27 @@
+{
+  "edutorium": {
+    "title": "Edutorium",
+    "description": "Aplikasi web modern untuk memberikan pengalaman belajar yang cepat dan responsif bagi kelas dan pendidik.",
+    "cta": "Lihat demonya!",
+    "demoLabel": "Lihat demo →",
+    "targetUrl": "https://staging.edutorium.in/",
+    "heroImage": "/projects/edutorium.webp",
+    "slides": [
+      {
+        "image": "/projects/edutorium.webp",
+        "label": "Dashboard",
+        "link": "/projects/edutorium/dashboard"
+      },
+      {
+        "image": "/designs/a.png",
+        "label": "Landing Page",
+        "link": "/projects/edutorium/landing"
+      },
+      {
+        "image": "/designs/b.png",
+        "label": "Admin Panel",
+        "link": "/projects/edutorium/admin"
+      }
+    ]
+  }
+}

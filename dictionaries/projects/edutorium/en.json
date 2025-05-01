@@ -1,0 +1,27 @@
+{
+  "edutorium": {
+    "title": "Edutorium",
+    "description": "A modern web application built to deliver fast, responsive learning experiences for classrooms and educators.",
+    "cta": "Go for the demo!",
+    "demoLabel": "Look for the demo →",
+    "targetUrl": "https://staging.edutorium.in/",
+    "heroImage": "/projects/edutorium.webp",
+    "slides": [
+      {
+        "image": "/projects/edutorium.webp",
+        "label": "Dashboard",
+        "link": "/projects/edutorium/dashboard"
+      },
+      {
+        "image": "/designs/a.png",
+        "label": "Landing Page",
+        "link": "/projects/edutorium/landing"
+      },
+      {
+        "image": "/designs/b.png",
+        "label": "Admin Panel",
+        "link": "/projects/edutorium/admin"
+      }
+    ]
+  }
+}
