@@ -1,0 +1,20 @@
+{
+  "feature-section": {
+    "left": {
+      "title1": "BELAJAR",
+      "title2": "& TUMBUH",
+      "description": "Saya merancang pengalaman yang berpusat pada pengguna secara mendalam, tidak hanya menyelesaikan masalah tetapi juga meningkatkan cara orang berinteraksi dengan teknologi.",
+      "techStack": ["CodeIgniter", "Laravel", "Next.js", "Tailwind", "React"]
+    },
+    "right": {
+      "greeting1": "Haloo,",
+      "greeting2": "Saya Akbar",
+      "description": "Saya merancang dan membangun pengalaman web yang bermakna dengan kode yang rapi, logika yang jelas, dan empati terhadap pengguna — berdasarkan pengalaman saya sebagai seorang <b>Web Developer</b> dan <b>Mantan Project Manager</b>.",
+      "roles": {
+        "0": "Web Developer",
+        "1": "Frontend Engineer",
+        "2": "Project Manager"
+      }
+    }
+  }
+}

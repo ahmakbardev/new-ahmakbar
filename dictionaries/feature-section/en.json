@@ -1,0 +1,20 @@
+{
+  "feature-section": {
+    "left": {
+      "title1": "LEARN",
+      "title2": "& GROW",
+      "description": "I craft thoughtful, user-centered experiences that not only solve problems but also enhance the way people interact with technology.",
+      "techStack": ["CodeIgniter", "Laravel", "Next.js", "Tailwind", "React"]
+    },
+    "right": {
+      "greeting1": "Hey there,",
+      "greeting2": "I’m Akbar 👋",
+      "description": "I design and build purposeful web experiences with clean code, clear logic, and a strong sense of user empathy — drawing on my experience both as a <b>Web Developer</b> and a <b>Former Project Manager</b>.",
+      "roles": {
+        "0": "Web Developer",
+        "1": "Frontend Engineer",
+        "2": "Project Manager"
+      }
+    }
+  }
+}
