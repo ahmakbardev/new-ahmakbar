@@ -45,7 +45,7 @@ export default function WorkProcessTimeline() {
             {/* Icon */}
             <div className="bg-blue-600 rounded-full w-14 h-14 flex items-center justify-center mb-3 relative shadow-lg">
               {step.icon}
-              <div className="absolute -top-2 -right-2 bg-white border border-blue-600 text-blue-600 text-xs font-semibold w-5 h-5 flex items-center justify-center rounded-full">
+              <div className="absolute top-0 right-0 bg-white border border-blue-600 text-blue-600 text-xs font-semibold w-5 h-5 flex items-center justify-center rounded-full">
                 {String(i + 1).padStart(2, "0")}
               </div>
             </div>

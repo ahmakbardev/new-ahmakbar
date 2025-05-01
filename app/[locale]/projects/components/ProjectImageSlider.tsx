@@ -30,7 +30,7 @@ export default function ProjectImageSlider({
   };
 
   useEffect(() => {
-    const timer = setInterval(() => paginate(1), 4000);
+    const timer = setInterval(() => paginate(1), 8000);
     return () => clearInterval(timer);
   }, [slides.length]);
 
@@ -57,8 +57,18 @@ export default function ProjectImageSlider({
             initial={{ x: direction > 0 ? "100%" : "-100%" }}
             animate={{ x: 0 }}
             exit={{ x: direction < 0 ? "100%" : "-100%" }}
-            transition={{ type: "tween", duration: 0.6 }}
+            transition={{
+              duration: 0.6,
+              ease: [0.77, 0, 0.175, 1], // cubic-bezier untuk swipe smooth
+            }}
             className="absolute inset-0 w-full h-full"
+            drag="x"
+            dragConstraints={{ left: 0, right: 0 }}
+            onDragEnd={(e, info) => {
+              if (info.offset.x < -100)
+                paginate(1); // Swipe left → next
+              else if (info.offset.x > 100) paginate(-1); // Swipe right → prev
+            }}
           >
             <Image
               src={slides[index].image}
@@ -85,7 +95,7 @@ export default function ProjectImageSlider({
                 key={i + "-fill"}
                 initial={{ width: "0%" }}
                 animate={{ width: "100%" }}
-                transition={{ duration: 4, ease: "linear" }}
+                transition={{ duration: 8, ease: "linear" }}
                 className="absolute left-0 top-0 h-full bg-blue-600 rounded-r-full"
               />
             )}

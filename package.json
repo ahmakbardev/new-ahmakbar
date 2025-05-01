@@ -43,6 +43,7 @@
     "he": "^1.2.0",
     "highcharts": "^12.2.0",
     "highcharts-react-official": "^3.2.2",
+    "html2canvas": "^1.4.1",
     "lottie-react": "^2.4.1",
     "lucide-react": "^0.503.0",
     "motion": "^12.9.2",

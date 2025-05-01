@@ -13,14 +13,9 @@
         "link": "/projects/edutorium/dashboard"
       },
       {
-        "image": "/designs/a.png",
+        "image": "/projects/laptop/Edutorium1.gif",
         "label": "Landing Page",
         "link": "/projects/edutorium/landing"
-      },
-      {
-        "image": "/designs/b.png",
-        "label": "Admin Panel",
-        "link": "/projects/edutorium/admin"
       }
     ]
   }

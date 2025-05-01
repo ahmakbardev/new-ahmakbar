@@ -19,7 +19,7 @@ export default function Hero() {
       {/* Hashtag */}
       <div className="absolute xxs:left-[-5px] lxs:left-[-10px] md:left-[100px] lg:top-[80px] xl:top-[100px] xl:left-[180px] 2xl:top-[100px] 2xl:left-[380px] rotate-[10deg] scale-[2]">
         <Image
-          src="/icons/Hashtags.svg"
+          src="/icons/hashtags.svg"
           alt="Hashtag"
           width={90}
           height={90}
