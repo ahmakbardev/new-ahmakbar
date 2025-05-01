@@ -10,6 +10,8 @@ import {
   Sniglet,
 } from "next/font/google";
 import SmoothScroll from "./components/SmoothScroll";
+import CustomProgressBar from "@/components/CustomProgressBar";
+import InitialSplashScreenWithWave from "@/components/InitialSplashScreen";
 
 const jakarta = Plus_Jakarta_Sans({
   variable: "--font-jakarta",
@@ -48,7 +50,9 @@ export default async function LocaleLayout({
       <body
         className={`${jakarta.variable} ${outfit.variable} ${montserrat.variable} ${sniglet.variable} font-jakarta overflow-x-hidden bg-[#0052FF]`}
       >
+        <CustomProgressBar />
         <SmoothScroll />
+        <InitialSplashScreenWithWave />
         <NextIntlClientProvider>
           <Header />
           {children}

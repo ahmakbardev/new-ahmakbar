@@ -81,7 +81,7 @@ export default function HorizontalScrollGallery() {
               }}
               whileHover={{ scale: 1.05 }}
             >
-              <div className="relative w-[250px] h-[320px]">
+              <div className="relative w-[150px] h-[220px] md:w-[250px] md:h-[320px]">
                 {/* Main Card */}
                 <motion.div
                   className={`absolute inset-0 ${
