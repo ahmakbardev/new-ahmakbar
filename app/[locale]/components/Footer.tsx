@@ -8,7 +8,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto grid gap-8 md:grid-cols-3">
         {/* Brand */}
         <div>
-          <h2 className="text-xl font-bold mb-4">YourBrand</h2>
+          <h2 className="text-xl font-bold mb-4">ahmakbar</h2>
           <p className="text-sm text-white/70">
             Empowering developers with tools, docs, and community.
           </p>
@@ -28,7 +28,7 @@ export default function Footer() {
                 Docs
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link href="/community" className="hover:underline">
                 Community
               </Link>
@@ -37,12 +37,12 @@ export default function Footer() {
               <Link href="/blog" className="hover:underline">
                 Blog
               </Link>
-            </li>
+            </li> */}
           </ul>
         </div>
 
         {/* Socials or Contact */}
-        <div>
+        {/* <div>
           <h3 className="text-lg font-semibold mb-3">Follow Us</h3>
           <ul className="space-y-2 text-sm">
             <li>
@@ -71,11 +71,11 @@ export default function Footer() {
               </a>
             </li>
           </ul>
-        </div>
+        </div> */}
       </div>
 
       <div className="mt-10 border-t border-white/20 pt-6 text-center text-sm text-white/60">
-        © {new Date().getFullYear()} YourBrand. All rights reserved.
+        © {new Date().getFullYear()} ahmakbar. All rights reserved.
       </div>
     </footer>
   );
