@@ -3,8 +3,10 @@
 import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Menu, X } from "lucide-react";
+import { Menu, Sparkles, X } from "lucide-react";
 import clsx from "clsx";
+import { motion, AnimatePresence } from "framer-motion";
+import MobileLangSwitcher from "./MobileLangSwitcher";
 
 const navItems = [
   { label: "Home", href: "/" },
@@ -24,16 +26,16 @@ export default function NavbarMobile() {
       <button
         onClick={() => setOpen(!open)}
         className={clsx(
-          "fixed md:hidden top-4 right-4 z-[60] flex items-center justify-center rounded-full p-2 transition-all duration-300",
+          "fixed md:hidden top-4 right-4 z-[60] flex items-center justify-center w-14 h-14 rounded-xl shadow-lg transition-all duration-300",
           open
             ? "bg-white text-[#003FCC] rotate-90"
-            : "bg-[#003FCC] text-white",
+            : "bg-[#003FCC] text-white hover:bg-[#0052FF]",
         )}
       >
         {open ? (
           <X className="w-6 h-6 transition-transform duration-300" />
         ) : (
-          <Menu className="w-6 h-6" />
+          <Menu className="w-6 h-6 transition-transform duration-300" />
         )}
       </button>
 
@@ -47,30 +49,71 @@ export default function NavbarMobile() {
       />
 
       {/* Drawer Menu */}
-      <div
-        className={clsx(
-          "fixed top-0 right-0 z-50 h-full w-[75%] max-w-xs bg-white shadow-xl transform transition-transform duration-500 ease-in-out",
-          open ? "translate-x-0" : "translate-x-full",
-        )}
-      >
-        <div className="px-6 py-8 flex flex-col gap-6">
-          {navItems.map((item) => (
-            <Link
-              key={item.href}
-              href={item.href}
-              onClick={() => setOpen(false)}
-              className={clsx(
-                "text-lg font-medium px-4 py-2 rounded-md transition-all duration-300",
-                pathname === item.href
-                  ? "bg-[#003FCC] text-white shadow-md"
-                  : "text-[#003FCC] hover:bg-[#E5F0FF] hover:pl-6",
-              )}
+      <AnimatePresence>
+        {open && (
+          <>
+            <motion.div
+              initial={{ y: "100%" }}
+              animate={{ y: 0 }}
+              exit={{ y: "100%" }}
+              transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
+              className="fixed bottom-0 left-0 right-0 z-50 h-[90vh] bg-white shadow-2xl flex items-center justify-center"
             >
-              {item.label}
-            </Link>
-          ))}
-        </div>
-      </div>
+              <div className="absolute top-12 w-full">
+                <p className="text-center text-sm font-semibold text-[#999] tracking-widest uppercase mb-6">
+                  Menu
+                </p>
+              </div>
+              <motion.ul
+                initial="hidden"
+                animate="show"
+                exit="hidden"
+                variants={{
+                  hidden: { opacity: 0 },
+                  show: {
+                    opacity: 1,
+                    transition: { staggerChildren: 0.1 },
+                  },
+                }}
+                className="flex flex-col gap-14 w-full px-6"
+              >
+                {navItems.map((item) => (
+                  <motion.li
+                    key={item.href}
+                    variants={{
+                      hidden: { opacity: 0, y: 20 },
+                      show: { opacity: 1, y: 0 },
+                    }}
+                  >
+                    <Link
+                      href={item.href}
+                      onClick={() => setOpen(false)}
+                      className={clsx(
+                        "relative text-6xl font-black uppercase tracking-wide px-4 py-3 rounded-lg w-full text-center transition-all duration-300",
+                        pathname === item.href
+                          ? "bg-[#003FCC] text-white"
+                          : "text-[#003FCC] hover:bg-[#E5F0FF]",
+                      )}
+                    >
+                      {item.label}
+
+                      {/* Sparkles di pojok kanan atas */}
+                      <motion.div
+                        animate={{ rotate: [0, 10, -10, 0] }}
+                        transition={{ repeat: Infinity, duration: 2 }}
+                        className="absolute -top-2 -right-3"
+                      >
+                        <Sparkles className="w-5 h-5 text-[#003FCC]" />
+                      </motion.div>
+                    </Link>
+                  </motion.li>
+                ))}
+              </motion.ul>
+            </motion.div>
+            <MobileLangSwitcher />
+          </>
+        )}
+      </AnimatePresence>
     </>
   );
 }
