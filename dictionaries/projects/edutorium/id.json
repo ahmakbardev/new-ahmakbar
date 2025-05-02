@@ -17,6 +17,102 @@
         "label": "Landing Page",
         "link": "/projects/edutorium/landing"
       }
-    ]
+    ],
+    "projectTimeline": {
+      "title": "Proses Pengerjaan Proyek",
+      "subtitle": "Timeline Proyek",
+      "steps": [
+        {
+          "icon": "user",
+          "title": "Konsultasi",
+          "description": "Memahami kebutuhan pengguna, tujuan proyek, dan spesifikasi teknis melalui diskusi dengan pemangku kepentingan."
+        },
+        {
+          "icon": "lightbulb",
+          "title": "Strategi",
+          "description": "Menentukan cakupan proyek, rencana arsitektur, dan membuat milestone yang sesuai dengan tujuan pembelajaran."
+        },
+        {
+          "icon": "layers",
+          "title": "Implementasi",
+          "description": "Membangun modul utama seperti dashboard pembelajaran, landing page, dan fitur kelas menggunakan stack modern."
+        },
+        {
+          "icon": "smile",
+          "title": "Hasil Akhir",
+          "description": "Menyajikan platform pembelajaran yang fungsional dan responsif dengan pengalaman pengguna yang mulus untuk pendidik."
+        }
+      ]
+    },
+    "heroSection": {
+      "title": {
+        "pre": "Rasakan masa depan",
+        "highlight": "Pembelajaran Daring",
+        "post": "bersama"
+      },
+      "description": "Saat belajar dengan Edutorium, kamu tidak hanya mendapatkan platform – kamu juga mendapatkan dukungan penuh dari tim yang berdedikasi untuk keberhasilan belajarmu. Dari materi terkurasi, kelas interaktif, hingga sesi bersama ahli, semua hadir untuk pengalaman belajar yang menyeluruh.",
+      "image": "/projects/phone/dummy-2.webp"
+    },
+    "keyFeatures": {
+      "title": "Temukan",
+      "highlight": "Fitur Unggulan",
+      "description": "Dirancang untuk membantu pembelajar tumbuh percaya diri dengan alat pembelajaran modern dan panduan kolaboratif.",
+      "features": [
+        {
+          "icon": "monitor-check",
+          "title": "Live Coding",
+          "desc": "Sesi interaktif dan kolaboratif bersama mentor."
+        },
+        {
+          "icon": "book-open-check",
+          "title": "Pembelajaran Modular",
+          "desc": "Modul yang mudah diikuti dan sesuai ritme belajar masing-masing."
+        },
+        {
+          "icon": "layout-dashboard",
+          "title": "Dashboard Kustom",
+          "desc": "Dashboard personal untuk memantau perkembangan belajar."
+        },
+        {
+          "icon": "smartphone",
+          "title": "Ramah Mobile",
+          "desc": "Pengalaman optimal di semua perangkat."
+        },
+        {
+          "icon": "code",
+          "title": "Proyek Nyata",
+          "desc": "Bangun aplikasi nyata yang layak ditampilkan di portfolio."
+        },
+        {
+          "icon": "users",
+          "title": "Dukungan Komunitas",
+          "desc": "Akses ke grup privat dan diskusi bersama mentor."
+        }
+      ]
+    },
+    "platformSupport": {
+      "title": "Belajar tanpa batas",
+      "highlight": "Akses dari Mana Saja",
+      "description": "Edutorium memastikan pengalaman belajar kamu tetap lancar di semua perangkat. Baik di desktop, ponsel, atau langsung lewat browser — kelas kamu selalu bisa diakses.",
+      "items": [
+        {
+          "icon": "monitor",
+          "title": "Pengalaman Desktop",
+          "desc": "Performa terbaik untuk pembelajaran fokus di layar besar."
+        },
+        {
+          "icon": "smartphone",
+          "title": "Akses Mobile",
+          "desc": "Belajar kapan saja di mana saja dengan responsif penuh di ponsel."
+        },
+        {
+          "icon": "globe",
+          "title": "Berbasis Browser",
+          "desc": "Tanpa instalasi. Semua fitur tersedia langsung dari web."
+        }
+      ],
+      "image": "/projects/laptop/laptop-edu.webp",
+      "cta": "Mulai Belajar"
+    }
   }
 }

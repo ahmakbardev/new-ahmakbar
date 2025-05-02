@@ -17,6 +17,102 @@
         "label": "Landing Page",
         "link": "/projects/edutorium/landing"
       }
-    ]
+    ],
+    "projectTimeline": {
+      "title": "Project Work Process",
+      "subtitle": "Project Timeline",
+      "steps": [
+        {
+          "icon": "user",
+          "title": "Consultation",
+          "description": "Understanding user needs, project goals, and technical requirements through stakeholder discussions."
+        },
+        {
+          "icon": "lightbulb",
+          "title": "Strategy",
+          "description": "Defining project scope, architecture plan, and setting clear milestones aligned with learning outcomes."
+        },
+        {
+          "icon": "layers",
+          "title": "Implementation",
+          "description": "Building key modules such as the learning dashboard, landing page, and classroom features using modern stack."
+        },
+        {
+          "icon": "smile",
+          "title": "Final Result",
+          "description": "Delivering a fully functional, responsive learning platform with a seamless user experience for educators."
+        }
+      ]
+    },
+    "heroSection": {
+      "title": {
+        "pre": "Experience the",
+        "highlight": "Online Learning",
+        "post": "future of"
+      },
+      "description": "When you learn with Edutorium, you don’t just get a platform – you get support from a team dedicated to your learning success. From curated materials, interactive classes, to expert sessions, Edutorium delivers the complete digital learning experience.",
+      "image": "/projects/phone/dummy-2.webp"
+    },
+    "keyFeatures": {
+      "title": "Discover our",
+      "highlight": "Key Features",
+      "description": "Designed to help learners grow confidently with modern learning tools and collaborative guidance.",
+      "features": [
+        {
+          "icon": "monitor-check",
+          "title": "Live Coding",
+          "desc": "Collaborative and interactive sessions with mentors."
+        },
+        {
+          "icon": "book-open-check",
+          "title": "Modular Learning",
+          "desc": "Easy-to-follow modules that suit your own pace."
+        },
+        {
+          "icon": "layout-dashboard",
+          "title": "Custom Dashboard",
+          "desc": "Personalized dashboard for tracking learning progress."
+        },
+        {
+          "icon": "smartphone",
+          "title": "Mobile Friendly",
+          "desc": "Optimized experience across all devices."
+        },
+        {
+          "icon": "code",
+          "title": "Real Projects",
+          "desc": "Build portfolio-worthy applications during the program."
+        },
+        {
+          "icon": "users",
+          "title": "Community Support",
+          "desc": "Access to private groups and mentor discussions."
+        }
+      ]
+    },
+    "platformSupport": {
+      "title": "Learning without limits",
+      "highlight": "Accessible Anywhere",
+      "description": "Edutorium ensures your learning is seamless across all devices. Whether you're on desktop, mobile, or just using a browser — your classroom follows you.",
+      "items": [
+        {
+          "icon": "monitor",
+          "title": "Desktop Experience",
+          "desc": "Best-in-class performance for focused learning on wide screens."
+        },
+        {
+          "icon": "smartphone",
+          "title": "Mobile Access",
+          "desc": "Study anytime on the go with full mobile responsiveness."
+        },
+        {
+          "icon": "globe",
+          "title": "Browser-Based",
+          "desc": "No app needed. All features accessible directly from the web."
+        }
+      ],
+      "image": "/projects/laptop/laptop-edu.webp",
+      "cta": "Start Learning"
+    }
   }
 }
