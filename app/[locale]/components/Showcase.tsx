@@ -12,7 +12,7 @@ export default function Showcase() {
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
-          <div className="relative w-[25rem]">
+          <div className="relative w-full md:w-[25rem]">
             <RotatingWords />
           </div>
           <div className="flex-1">

@@ -5,15 +5,13 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import clsx from "clsx";
 import Image from "next/image";
-import { Github, Linkedin, Instagram } from "lucide-react"; // dari lucide
-import { BiEnvelope } from "react-icons/bi"; // fallback dari boxicons (email)
+import { Github, Linkedin, Instagram } from "lucide-react";
+import { BiEnvelope } from "react-icons/bi";
 import { Tooltip } from "@/components/ui/tooltip";
 import LanguageSwitcher from "./LangSwitcher";
 
 const navItems = [
   { label: "Home", href: "/" },
-  // { label: "Portfolios", href: "/docs" },
-  // { label: "Achievement", href: "/achieve" },
   { label: "About", href: "/about" },
 ];
 
@@ -43,24 +41,66 @@ const socialLinks = [
 export default function NavbarDesktop() {
   const pathname = usePathname();
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isHomeScrolled, setIsHomeScrolled] = useState(false);
+  const isProjectDetailPage = /^\/[a-z]{2}\/projects\/[^/]+$/.test(pathname);
+
+  const [isProjectScrolled, setIsProjectScrolled] = useState(false);
+
+  const isHomePage = /^\/[a-z]{2}$/.test(pathname);
 
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 10);
     };
-
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  useEffect(() => {
+    if (!isHomePage) return;
+
+    const handleScroll = () => {
+      const screenHeight = window.innerHeight;
+      const testimonialSection = document.getElementById("testimoni");
+      const testimonialTop =
+        testimonialSection?.getBoundingClientRect().top || Infinity;
+
+      // jika udah scroll > 100vh tapi belum nyentuh testimonial section
+      const shouldBeHomeScrolled =
+        window.scrollY > screenHeight && testimonialTop > 0;
+
+      setIsHomeScrolled(shouldBeHomeScrolled);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [isHomePage]);
+
+  useEffect(() => {
+    if (!isProjectDetailPage) return;
+
+    const handleScroll = () => {
+      setIsProjectScrolled(window.scrollY > 30);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [isProjectDetailPage]);
 
   return (
     <div className="flex items-center gap-4">
       <nav
         className={clsx(
           "hidden md:flex justify-between gap-4 transition-all duration-300 items-center w-full",
-          isScrolled
-            ? "bg-white/10 backdrop-blur-lg rounded-full max-w-6xl px-6 py-5 mt-3 mx-auto shadow-md"
-            : "py-3",
+          !isScrolled && "py-3",
+
+          // Prioritas: jika di halaman project detail
+          isProjectDetailPage && isProjectScrolled
+            ? "bg-blue-600 text-white rounded-full px-6 py-4 mt-3 shadow-md"
+            : isHomePage && isHomeScrolled
+              ? "bg-blue-600 text-white rounded-full px-6 py-4 mt-3 shadow-md"
+              : isScrolled &&
+                "bg-white/10 backdrop-blur-lg rounded-full shadow-md mt-3 px-6 py-4",
         )}
       >
         <div className="flex-1">
@@ -110,7 +150,11 @@ export default function NavbarDesktop() {
           ))}
         </div>
       </nav>
-      <LanguageSwitcher isScrolled={isScrolled} />
+      <LanguageSwitcher
+        isScrolled={isScrolled}
+        isHomeScrolled={isHomeScrolled}
+        isProjectScrolled={isProjectScrolled}
+      />
     </div>
   );
 }

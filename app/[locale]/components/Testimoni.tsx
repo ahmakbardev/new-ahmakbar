@@ -58,7 +58,11 @@ export default function TestimonialGrid() {
   }, [inView, controls, titleControls]);
 
   return (
-    <section ref={ref} className="relative h-screen w-screen overflow-hidden">
+    <section
+      ref={ref}
+      id="testimoni"
+      className="relative hidden md:flex h-screen w-screen overflow-hidden"
+    >
       {testimonials.map((s, i) => (
         <motion.div
           key={i}
@@ -84,7 +88,7 @@ export default function TestimonialGrid() {
                 : {},
             );
           }}
-          className="service-card absolute left-[58%] top-[60%] w-64 p-5 bg-white rounded-3xl shadow-xl -translate-x-1/2 -translate-y-1/2 flex flex-col gap-4 cursor-pointer"
+          className="service-card absolute left-[67%] lg:left-[58%] top-[60%] w-64 p-5 bg-white rounded-3xl shadow-xl -translate-x-1/2 -translate-y-1/2 flex flex-col gap-4 cursor-pointer"
         >
           <Avatar.Root className="relative w-[140px] h-[140px] bg-[#0052FF] mx-auto rounded-full overflow-hidden">
             <Avatar.Image

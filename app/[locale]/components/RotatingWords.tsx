@@ -88,7 +88,7 @@ export default function RotatingWords() {
   const scrambled2 = useScramble(line2, 75, 50, scrambleKey + "-2");
 
   return (
-    <div className="h-[150px] overflow-hidden relative">
+    <div className="h-[90px] md:h-[150px] overflow-hidden relative">
       <div
         className={`transition-colors duration-200 ease-in-out w-full h-full px-4 py-2
         font-bold font-montserrat text-[40px] md:text-[60px] leading-tight
@@ -121,7 +121,7 @@ export default function RotatingWords() {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -30 }}
               transition={{ duration: 0.4, delay: 0.1 }}
-              className="absolute top-[60px] w-full"
+              className="absolute top-[35px] md:top-[60px] w-full"
             >
               {scrambled2}.
             </motion.div>

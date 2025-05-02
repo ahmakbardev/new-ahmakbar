@@ -25,7 +25,7 @@ export default function ProjectDetailPage() {
   const targetUrl = t("targetUrl");
 
   return (
-    <section className="px-10 py-10 mt-20 bg-white rounded-4xl max-w-6xl mx-auto">
+    <section className="px-10 py-10 mt-28 bg-white rounded-4xl h-fit max-w-6xl mx-auto">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
         {/* KIRI */}
         <div className="flex flex-col">
@@ -45,7 +45,7 @@ export default function ProjectDetailPage() {
 
         <Link href={targetUrl} target="_blank" rel="noopener noreferrer">
           <div
-            className="relative hidden md:flex w-full h-64 md:h-full max-h-[710px] overflow-hidden rounded-2xl shadow-lg mb-10 md:mb-0 group cursor-pointer"
+            className="relative hidden md:flex w-full h-64 md:h-[680px] max-h-[710px] overflow-hidden rounded-2xl shadow-lg mb-10 md:mb-0 group cursor-pointer"
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
           >
