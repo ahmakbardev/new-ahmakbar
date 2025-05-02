@@ -20,6 +20,13 @@
       "type": "Website Sekolah",
       "desc": "Situs resmi sekolah untuk komunikasi dan akses informasi digital.",
       "image": "/projects/smkpgri2.webp"
+    },
+    "3": {
+      "slug": "statprove",
+      "title": "Statprove",
+      "type": "Layanan Digital",
+      "desc": "Membangun situs web dan solusi digital modern untuk UMKM dan profesional.",
+      "image": "/projects/statprove.webp"
     }
   }
 }

@@ -1,0 +1,32 @@
+{
+  "testimonials": {
+    "testimonials": [
+      {
+        "name": "Rifqi Ardhian",
+        "role": "Lead Developer",
+        "desc": "A highly reliable teammate. Working with him has always been efficient and productive.",
+        "tags": ["👨‍💻 Tech Lead", "🛠️ Backend Expert"]
+      },
+      {
+        "name": "Tria Bagus",
+        "role": "WordPress Developer",
+        "desc": "Always delivers clean and scalable code. A great team player in web development.",
+        "tags": ["💡 UI Builder", "⚙️ CMS Specialist"]
+      },
+      {
+        "name": "Gita Kartika",
+        "role": "System Analyst",
+        "desc": "Has strong analytical skills and bridges communication between tech and business very well.",
+        "tags": ["🔍 Analyst", "🧠 UX Thinker"]
+      },
+      {
+        "name": "Mahendra",
+        "role": "Lead Product",
+        "desc": "A visionary leader with a sharp product sense. Great at driving direction and execution.",
+        "tags": ["🚀 Visionary", "🧭 Product Strategy"]
+      }
+    ],
+    "sectionTitle1": "People who worked",
+    "sectionTitle2": "with me are saying"
+  }
+}

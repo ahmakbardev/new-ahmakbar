@@ -1,0 +1,126 @@
+{
+  "statprove": {
+    "title": "Statprove",
+    "description": "A digital service platform for building modern websites and custom applications tailored for small businesses and professionals.",
+    "cta": "Launch Your Project",
+    "demoLabel": "View showcase →",
+    "targetUrl": "https://www.statprove.my.id/",
+    "heroImage": "/projects/statprove.webp",
+    "color": {
+      "primary": "[#3B82F6]",
+      "hex": "#3B82F6",
+      "gradient": {
+        "from": "#3B82F6",
+        "to": "#2563EB"
+      }
+    },
+    "slides": [
+      {
+        "image": "/projects/laptop/statprove1.png",
+        "label": "Service Overview",
+        "link": "/projects/statprove/overview"
+      },
+      {
+        "image": "/projects/laptop/statprove2.png",
+        "label": "About Page",
+        "link": "/projects/statprove/dashboard"
+      }
+    ],
+    "projectTimeline": {
+      "title": "Project Development Stages",
+      "subtitle": "Timeline",
+      "steps": [
+        {
+          "icon": "user",
+          "title": "Requirement Gathering",
+          "description": "Discussing client goals and outlining core features for digital solutions."
+        },
+        {
+          "icon": "lightbulb",
+          "title": "Solution Design",
+          "description": "Designing systems and user interfaces with a user-first mindset."
+        },
+        {
+          "icon": "layers",
+          "title": "Development",
+          "description": "Building frontend/backend systems and integrating services based on business needs."
+        },
+        {
+          "icon": "smile",
+          "title": "Go Live",
+          "description": "Launching reliable and optimized websites or apps ready for production."
+        }
+      ]
+    },
+    "heroSection": {
+      "title": {
+        "pre": "Grow your presence with",
+        "highlight": "Statprove",
+        "post": "today"
+      },
+      "description": "Statprove is the right solution for entrepreneurs and professionals who want to build a digital presence with style and performance. From portfolio sites to business systems, we develop with impact.",
+      "image": "/projects/phone/statprove1.webp"
+    },
+    "keyFeatures": {
+      "title": "Why choose",
+      "highlight": "Statprove",
+      "description": "Everything you need to bring your idea into a fully functional digital product.",
+      "features": [
+        {
+          "icon": "monitor-check",
+          "title": "Clean UI",
+          "desc": "Modern interface design optimized for users and conversions."
+        },
+        {
+          "icon": "book-open-check",
+          "title": "Custom Systems",
+          "desc": "Tailored workflows and admin dashboards for businesses."
+        },
+        {
+          "icon": "layout-dashboard",
+          "title": "Dynamic Pages",
+          "desc": "Easily add content and scale without limitations."
+        },
+        {
+          "icon": "smartphone",
+          "title": "Mobile Responsive",
+          "desc": "Works perfectly across mobile, tablet, and desktop."
+        },
+        {
+          "icon": "code",
+          "title": "Optimized Code",
+          "desc": "Built with modern frameworks to ensure fast loading and smooth transitions."
+        },
+        {
+          "icon": "users",
+          "title": "Client Support",
+          "desc": "Dedicated team support for any technical or service needs."
+        }
+      ]
+    },
+    "platformSupport": {
+      "title": "Digital tools that",
+      "highlight": "fit your workflow",
+      "description": "Statprove builds applications you can access anywhere — mobile, browser, or system-based platforms.",
+      "items": [
+        {
+          "icon": "monitor",
+          "title": "Desktop Apps",
+          "desc": "High performance apps for your core operations."
+        },
+        {
+          "icon": "smartphone",
+          "title": "Mobile Access",
+          "desc": "Your tools are available on the go, anytime."
+        },
+        {
+          "icon": "globe",
+          "title": "Cloud Platforms",
+          "desc": "No installations — everything runs smoothly on web."
+        }
+      ],
+      "image": "/projects/laptop/statprove.webp",
+      "cta": "Get Started"
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "testimonials": {
+    "testimonials": [
+      {
+        "name": "Rifqi Ardhian",
+        "role": "Lead Developer",
+        "desc": "Rekan kerja yang sangat bisa diandalkan. Bekerja dengannya selalu efisien dan produktif.",
+        "tags": ["👨‍💻 Pemimpin Teknologi", "🛠️ Ahli Backend"]
+      },
+      {
+        "name": "Tria Bagus",
+        "role": "Developer WordPress",
+        "desc": "Selalu memberikan kode yang bersih dan skalabel. Kolaborator hebat dalam pengembangan web.",
+        "tags": ["💡 Pembuat UI", "⚙️ Spesialis CMS"]
+      },
+      {
+        "name": "Gita Kartika",
+        "role": "Analis Sistem",
+        "desc": "Punya kemampuan analisis yang tajam dan menjembatani komunikasi antara tim bisnis dan teknis.",
+        "tags": ["🔍 Analis", "🧠 Pemikir UX"]
+      },
+      {
+        "name": "Mahendra",
+        "role": "Lead Produk",
+        "desc": "Pemimpin visioner dengan insting produk yang tajam. Unggul dalam arah dan eksekusi.",
+        "tags": ["🚀 Visioner", "🧭 Strategi Produk"]
+      }
+    ],
+    "sectionTitle1": "Orang-orang yang pernah",
+    "sectionTitle2": " bekerja dengan saya berkata"
+  }
+}

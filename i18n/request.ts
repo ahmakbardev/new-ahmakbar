@@ -17,6 +17,9 @@ export default getRequestConfig(async ({ requestLocale }) => {
   const showcaseMessages = (
     await import(`@/dictionaries/showcase/${locale}.json`)
   ).default;
+  const testimonialsMessages = (
+    await import(`@/dictionaries/testimonials/${locale}.json`)
+  ).default;
 
   const projectsMessages = (
     await import(`@/dictionaries/projects/${locale}.json`)
@@ -30,6 +33,9 @@ export default getRequestConfig(async ({ requestLocale }) => {
   const smkpgri2malangMessages = (
     await import(`@/dictionaries/projects/smkpgri2malang/${locale}.json`)
   ).default;
+  const statproveMessages = (
+    await import(`@/dictionaries/projects/statprove/${locale}.json`)
+  ).default;
 
   return {
     locale,
@@ -37,10 +43,12 @@ export default getRequestConfig(async ({ requestLocale }) => {
       ...heroMessages,
       ...featureMessages,
       ...showcaseMessages,
+      ...testimonialsMessages,
       ...projectsMessages,
       ...edutoriumMessages,
       ...artiknesiaMessages,
       ...smkpgri2malangMessages,
+      ...statproveMessages,
     },
   };
 });

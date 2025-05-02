@@ -20,6 +20,13 @@
       "type": "Institutional Website",
       "desc": "Official school website built for better communication and digital accessibility.",
       "image": "/projects/smkpgri2.webp"
+    },
+    "3": {
+      "slug": "statprove",
+      "title": "Statprove",
+      "type": "Digital Service",
+      "desc": "Build modern websites and digital solutions for MSMEs and professionals.",
+      "image": "/projects/statprove.webp"
     }
   }
 }

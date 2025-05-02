@@ -4,47 +4,10 @@ import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 import * as Avatar from "@radix-ui/react-avatar";
-
-const services = [
-  {
-    title: "Rifqi Ardhian",
-    desc: "Reader will be distracted by the readable content.",
-    rotate: 15,
-    x: -550,
-    y: -280,
-    delay: 0.1,
-    tags: ["📐 Strategist", "🎨 Graphic Designer"],
-  },
-  {
-    title: "Tria Bagus",
-    desc: "Reach more audiences with web design.",
-    rotate: -10,
-    x: -500,
-    y: 100,
-    delay: 0.2,
-    tags: ["📐 Strategist", "🎨 Graphic Designer"],
-  },
-  {
-    title: "Gita Kartika",
-    desc: "Gain brand recognition with branding.",
-    rotate: -10,
-    x: 250,
-    y: -280,
-    delay: 0.3,
-    tags: ["📐 Strategist", "🎨 Graphic Designer"],
-  },
-  {
-    title: "Mahendra",
-    desc: "Creative concept for your audiences.",
-    rotate: 15,
-    x: 200,
-    y: 100,
-    delay: 0.4,
-    tags: ["📐 Strategist", "🎨 Graphic Designer"],
-  },
-];
+import { useTranslations } from "next-intl";
 
 export default function TestimonialGrid() {
+  const t = useTranslations("testimonials");
   const controls = useAnimation();
   const titleControls = useAnimation();
   const { ref, inView } = useInView({
@@ -52,10 +15,25 @@ export default function TestimonialGrid() {
     triggerOnce: true,
   });
 
+  const positions = [
+    { x: -550, y: -280, rotate: 15 },
+    { x: -500, y: 100, rotate: -10 },
+    { x: 250, y: -280, rotate: -10 },
+    { x: 200, y: 100, rotate: 15 },
+  ];
+
+  const testimonials = Array.from({ length: 4 }).map((_, i) => ({
+    name: t(`testimonials.${i}.name`),
+    role: t(`testimonials.${i}.role`),
+    desc: t(`testimonials.${i}.desc`),
+    tags: t.raw(`testimonials.${i}.tags`) as string[],
+    ...positions[i],
+  }));
+
   useEffect(() => {
     if (inView) {
       const timeout = setTimeout(() => {
-        services.forEach((s, i) => {
+        testimonials.forEach((s, i) => {
           controls.start((index) =>
             index === i
               ? {
@@ -81,7 +59,7 @@ export default function TestimonialGrid() {
 
   return (
     <section ref={ref} className="relative h-screen w-screen overflow-hidden">
-      {services.map((s, i) => (
+      {testimonials.map((s, i) => (
         <motion.div
           key={i}
           custom={i}
@@ -110,20 +88,20 @@ export default function TestimonialGrid() {
         >
           <Avatar.Root className="relative w-[140px] h-[140px] bg-[#0052FF] mx-auto rounded-full overflow-hidden">
             <Avatar.Image
-              src={`https://api.dicebear.com/7.x/micah/svg?seed=${s.title}`}
-              alt={s.title}
+              src={`https://api.dicebear.com/7.x/micah/svg?seed=${s.name}`}
+              alt={s.name}
               className="w-full h-full object-cover"
             />
             <Avatar.Fallback
               delayMs={200}
               className="flex items-center justify-center w-full h-full bg-gray-200 text-gray-500 text-3xl font-bold"
             >
-              {s.title.charAt(0)}
+              {s.name.charAt(0)}
             </Avatar.Fallback>
           </Avatar.Root>
 
           <div>
-            <h3 className="text-lg font-semibold">{s.title}</h3>
+            <h3 className="text-lg font-semibold">{s.name}</h3>
             <p className="text-sm text-gray-500 line-clamp-3">{s.desc}</p>
           </div>
           <div className="flex flex-wrap gap-2">
@@ -145,7 +123,8 @@ export default function TestimonialGrid() {
         transition={{ duration: 0.6, ease: "easeOut", delay: 1.5 }}
         className="absolute left-[50%] top-1/2 -translate-x-1/2 -translate-y-1/2 text-center text-4xl font-bold text-white"
       >
-        People who worked <br /> with me are saying
+        {t("sectionTitle1")}
+        <br /> {t("sectionTitle2")}
       </motion.h1>
     </section>
   );

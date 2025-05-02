@@ -1,0 +1,126 @@
+{
+  "statprove": {
+    "title": "Statprove",
+    "description": "Platform layanan digital untuk membangun website modern dan aplikasi kustom bagi UMKM dan profesional.",
+    "cta": "Mulai Proyek Anda",
+    "demoLabel": "Lihat demo →",
+    "targetUrl": "https://www.statprove.my.id/",
+    "heroImage": "/projects/statprove.webp",
+    "color": {
+      "primary": "[#3B82F6]",
+      "hex": "#3B82F6",
+      "gradient": {
+        "from": "#3B82F6",
+        "to": "#2563EB"
+      }
+    },
+    "slides": [
+      {
+        "image": "/projects/laptop/statprove1.png",
+        "label": "Tampilan Layanan",
+        "link": "/projects/statprove/overview"
+      },
+      {
+        "image": "/projects/laptop/statprove2.png",
+        "label": "Halaman Tentang",
+        "link": "/projects/statprove/dashboard"
+      }
+    ],
+    "projectTimeline": {
+      "title": "Tahapan Pengembangan Proyek",
+      "subtitle": "Timeline",
+      "steps": [
+        {
+          "icon": "user",
+          "title": "Analisis Kebutuhan",
+          "description": "Diskusi kebutuhan klien dan merancang fitur utama dari solusi digital."
+        },
+        {
+          "icon": "lightbulb",
+          "title": "Perancangan Solusi",
+          "description": "Mendesain sistem dan UI/UX dengan pendekatan user-centered."
+        },
+        {
+          "icon": "layers",
+          "title": "Implementasi",
+          "description": "Membangun sistem frontend/backend sesuai kebutuhan bisnis."
+        },
+        {
+          "icon": "smile",
+          "title": "Peluncuran",
+          "description": "Merilis produk siap pakai yang optimal dan stabil."
+        }
+      ]
+    },
+    "heroSection": {
+      "title": {
+        "pre": "Kembangkan bisnismu bersama",
+        "highlight": "Statprove",
+        "post": "hari ini"
+      },
+      "description": "Statprove adalah solusi tepat bagi pelaku usaha dan profesional yang ingin membangun kehadiran digital dengan gaya dan performa. Dari website portofolio hingga sistem bisnis, kami kembangkan dengan nilai.",
+      "image": "/projects/phone/statprove1.webp"
+    },
+    "keyFeatures": {
+      "title": "Kenapa memilih",
+      "highlight": "Statprove",
+      "description": "Semua yang kamu butuhkan untuk mengubah ide menjadi produk digital yang siap digunakan.",
+      "features": [
+        {
+          "icon": "monitor-check",
+          "title": "Desain Modern",
+          "desc": "Tampilan antarmuka modern yang ramah pengguna dan konversi tinggi."
+        },
+        {
+          "icon": "book-open-check",
+          "title": "Sistem Kustom",
+          "desc": "Workflow dan admin panel yang disesuaikan dengan kebutuhan bisnis."
+        },
+        {
+          "icon": "layout-dashboard",
+          "title": "Halaman Dinamis",
+          "desc": "Tambah konten dan skala dengan mudah tanpa batasan."
+        },
+        {
+          "icon": "smartphone",
+          "title": "Responsif Mobile",
+          "desc": "Berjalan sempurna di berbagai perangkat."
+        },
+        {
+          "icon": "code",
+          "title": "Kode Teroptimasi",
+          "desc": "Dikembangkan dengan framework modern untuk performa terbaik."
+        },
+        {
+          "icon": "users",
+          "title": "Dukungan Pelanggan",
+          "desc": "Tim support siap membantu kendala teknis maupun layanan."
+        }
+      ]
+    },
+    "platformSupport": {
+      "title": "Alat digital yang",
+      "highlight": "sesuai alur kerjamu",
+      "description": "Statprove membangun aplikasi yang dapat diakses kapan saja — baik melalui mobile, browser, maupun sistem terintegrasi.",
+      "items": [
+        {
+          "icon": "monitor",
+          "title": "Aplikasi Desktop",
+          "desc": "Performa tinggi untuk kebutuhan operasional utama."
+        },
+        {
+          "icon": "smartphone",
+          "title": "Akses Mobile",
+          "desc": "Alatmu bisa diakses kapan pun di mana pun."
+        },
+        {
+          "icon": "globe",
+          "title": "Platform Cloud",
+          "desc": "Tidak perlu instalasi — semua berjalan di web."
+        }
+      ],
+      "image": "/projects/laptop/statprove.webp",
+      "cta": "Mulai Sekarang"
+    }
+  }
+}
