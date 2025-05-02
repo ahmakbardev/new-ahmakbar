@@ -13,6 +13,13 @@
       "type": "Web Apps",
       "desc": "Digital platform for exploring exhibitions and connecting art communities.",
       "image": "/projects/artiknesia.webp"
+    },
+    "2": {
+      "slug": "smkpgri2malang",
+      "title": "SMK PGRI 2 Malang",
+      "type": "Institutional Website",
+      "desc": "Official school website built for better communication and digital accessibility.",
+      "image": "/projects/smkpgri2.webp"
     }
   }
 }

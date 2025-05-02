@@ -1,0 +1,126 @@
+{
+  "smkpgri2malang": {
+    "title": "SMK PGRI 2 Malang",
+    "description": "A modern school website showcasing academic excellence, student achievements, and digital services for the school community.",
+    "cta": "Visit the Website",
+    "demoLabel": "Explore the school site →",
+    "targetUrl": "https://www.smkpgri2malang.sch.id/",
+    "heroImage": "/projects/smkpgri2.webp",
+    "color": {
+      "primary": "[#139A4A]",
+      "hex": "#139A4A",
+      "gradient": {
+        "from": "#139A4A",
+        "to": "#0f7f3b"
+      }
+    },
+    "slides": [
+      {
+        "image": "/projects/laptop/pgri21.png",
+        "label": "Home Page",
+        "link": "/projects/smkpgri2malang/home"
+      },
+      {
+        "image": "/projects/laptop/pgri22.png",
+        "label": "Student Info Page",
+        "link": "/projects/smkpgri2malang/info"
+      }
+    ],
+    "projectTimeline": {
+      "title": "Website Development Process",
+      "subtitle": "Project Timeline",
+      "steps": [
+        {
+          "icon": "user",
+          "title": "Requirement Gathering",
+          "description": "Discussing needs with school administrators to define the content structure and goals of the website."
+        },
+        {
+          "icon": "lightbulb",
+          "title": "Design Planning",
+          "description": "Creating a layout that reflects the school's branding and user-friendly navigation for students and teachers."
+        },
+        {
+          "icon": "layers",
+          "title": "Development Phase",
+          "description": "Implementing static and dynamic content such as announcements, student info, and responsive design."
+        },
+        {
+          "icon": "smile",
+          "title": "Deployment",
+          "description": "Publishing the website and ensuring smooth access across devices for the school community."
+        }
+      ]
+    },
+    "heroSection": {
+      "title": {
+        "pre": "Discover the",
+        "highlight": "Spirit of Education",
+        "post": "with us"
+      },
+      "description": "SMK PGRI 2 Malang brings innovation and accessibility to education through its digital presence. Explore our programs, announcements, and achievements online.",
+      "image": "/projects/phone/smkpgri2.webp"
+    },
+    "keyFeatures": {
+      "title": "Highlighting our",
+      "highlight": "Key Features",
+      "description": "Designed to make information access easier and highlight the excellence of the school through a user-friendly interface.",
+      "features": [
+        {
+          "icon": "monitor-check",
+          "title": "Informative Homepage",
+          "desc": "Covers school activities, programs, and important announcements."
+        },
+        {
+          "icon": "book-open-check",
+          "title": "Student Info",
+          "desc": "Quick access to student achievements and learning resources."
+        },
+        {
+          "icon": "layout-dashboard",
+          "title": "Content Management",
+          "desc": "Easily update content through integrated CMS."
+        },
+        {
+          "icon": "smartphone",
+          "title": "Mobile Friendly",
+          "desc": "Optimized for mobile viewing for parents and students."
+        },
+        {
+          "icon": "code",
+          "title": "Clean Architecture",
+          "desc": "Built with modern tools and best practices for maintainability."
+        },
+        {
+          "icon": "users",
+          "title": "Community Reach",
+          "desc": "Supports better communication between school, students, and parents."
+        }
+      ]
+    },
+    "platformSupport": {
+      "title": "Digital Access for All",
+      "highlight": "Accessible & Responsive",
+      "description": "SMK PGRI 2 Malang’s website is designed to be accessible from all types of devices, ensuring continuous access to school updates.",
+      "items": [
+        {
+          "icon": "monitor",
+          "title": "Desktop View",
+          "desc": "Ideal for teachers and admin staff accessing full reports."
+        },
+        {
+          "icon": "smartphone",
+          "title": "Mobile Access",
+          "desc": "Students and parents stay connected through their phones."
+        },
+        {
+          "icon": "globe",
+          "title": "Web Portal",
+          "desc": "Access the school platform directly through the browser anytime."
+        }
+      ],
+      "image": "/projects/laptop/smkpgri2-hero.png",
+      "cta": "Visit Now"
+    }
+  }
+}

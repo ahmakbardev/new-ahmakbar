@@ -11,8 +11,15 @@
       "slug": "artiknesia",
       "title": "ARTIKNESIA",
       "type": "Aplikasi Web",
-      "desc": "Platform digital untuk menjelajahi pameran dan menghubungkan komunitas seni.",
+      "desc": "Platform digital untuk menjelajahi pameran dan komunitas seni.",
       "image": "/projects/artiknesia.webp"
+    },
+    "2": {
+      "slug": "smkpgri2malang",
+      "title": "SMK PGRI 2 Malang",
+      "type": "Website Sekolah",
+      "desc": "Situs resmi sekolah untuk komunikasi dan akses informasi digital.",
+      "image": "/projects/smkpgri2.webp"
     }
   }
 }

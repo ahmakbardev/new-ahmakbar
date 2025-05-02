@@ -1,0 +1,126 @@
+{
+  "smkpgri2malang": {
+    "title": "SMK PGRI 2 Malang",
+    "description": "Situs web sekolah modern yang menampilkan keunggulan akademik, prestasi siswa, dan layanan digital untuk seluruh warga sekolah.",
+    "cta": "Kunjungi Situs",
+    "demoLabel": "Lihat situs sekolah →",
+    "targetUrl": "https://www.smkpgri2malang.sch.id/",
+    "heroImage": "/projects/smkpgri2.webp",
+    "color": {
+      "primary": "[#139A4A]",
+      "hex": "#139A4A",
+      "gradient": {
+        "from": "#139A4A",
+        "to": "#0f7f3b"
+      }
+    },
+    "slides": [
+      {
+        "image": "/projects/laptop/pgri21.png",
+        "label": "Beranda",
+        "link": "/projects/smkpgri2malang/home"
+      },
+      {
+        "image": "/projects/laptop/pgri22.png",
+        "label": "Halaman Info Siswa",
+        "link": "/projects/smkpgri2malang/info"
+      }
+    ],
+    "projectTimeline": {
+      "title": "Proses Pembuatan Website",
+      "subtitle": "Timeline Proyek",
+      "steps": [
+        {
+          "icon": "user",
+          "title": "Pengumpulan Kebutuhan",
+          "description": "Diskusi bersama pihak sekolah untuk menentukan struktur konten dan tujuan dari website."
+        },
+        {
+          "icon": "lightbulb",
+          "title": "Perencanaan Desain",
+          "description": "Membuat layout yang mencerminkan branding sekolah dan navigasi yang mudah bagi siswa dan guru."
+        },
+        {
+          "icon": "layers",
+          "title": "Pengembangan",
+          "description": "Membangun konten statis dan dinamis seperti pengumuman, info siswa, dan desain responsif."
+        },
+        {
+          "icon": "smile",
+          "title": "Publikasi",
+          "description": "Menerbitkan website agar dapat diakses secara lancar di berbagai perangkat."
+        }
+      ]
+    },
+    "heroSection": {
+      "title": {
+        "pre": "Temukan",
+        "highlight": "Semangat Pendidikan",
+        "post": "bersama kami"
+      },
+      "description": "SMK PGRI 2 Malang menghadirkan inovasi dan aksesibilitas pendidikan melalui kehadiran digital. Telusuri program, pengumuman, dan prestasi kami secara online.",
+      "image": "/projects/phone/smkpgri2.webp"
+    },
+    "keyFeatures": {
+      "title": "Sorotan",
+      "highlight": "Fitur Utama",
+      "description": "Dirancang untuk mempermudah akses informasi dan menampilkan keunggulan sekolah melalui tampilan yang ramah pengguna.",
+      "features": [
+        {
+          "icon": "monitor-check",
+          "title": "Beranda Informatif",
+          "desc": "Menampilkan kegiatan sekolah, program, dan pengumuman penting."
+        },
+        {
+          "icon": "book-open-check",
+          "title": "Info Siswa",
+          "desc": "Akses cepat ke prestasi siswa dan sumber pembelajaran."
+        },
+        {
+          "icon": "layout-dashboard",
+          "title": "Manajemen Konten",
+          "desc": "Perbarui konten dengan mudah melalui CMS bawaan."
+        },
+        {
+          "icon": "smartphone",
+          "title": "Responsif Mobile",
+          "desc": "Mudah diakses orang tua dan siswa dari perangkat mobile."
+        },
+        {
+          "icon": "code",
+          "title": "Arsitektur Rapi",
+          "desc": "Dibangun dengan teknologi modern dan praktik terbaik."
+        },
+        {
+          "icon": "users",
+          "title": "Jangkauan Komunitas",
+          "desc": "Mendukung komunikasi yang lebih baik antara sekolah, siswa, dan orang tua."
+        }
+      ]
+    },
+    "platformSupport": {
+      "title": "Akses Digital untuk Semua",
+      "highlight": "Responsif & Fleksibel",
+      "description": "Website SMK PGRI 2 Malang dirancang agar dapat diakses dari semua jenis perangkat, memastikan koneksi informasi yang berkelanjutan.",
+      "items": [
+        {
+          "icon": "monitor",
+          "title": "Tampilan Desktop",
+          "desc": "Ideal bagi guru dan staf untuk mengakses laporan lengkap."
+        },
+        {
+          "icon": "smartphone",
+          "title": "Akses Mobile",
+          "desc": "Orang tua dan siswa tetap terhubung lewat ponsel."
+        },
+        {
+          "icon": "globe",
+          "title": "Portal Web",
+          "desc": "Akses platform sekolah langsung dari browser kapan saja."
+        }
+      ],
+      "image": "/projects/laptop/smkpgri2.webp",
+      "cta": "Kunjungi Sekarang"
+    }
+  }
+}

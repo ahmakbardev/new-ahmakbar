@@ -27,6 +27,9 @@ export default getRequestConfig(async ({ requestLocale }) => {
   const artiknesiaMessages = (
     await import(`@/dictionaries/projects/artiknesia/${locale}.json`)
   ).default;
+  const smkpgri2malangMessages = (
+    await import(`@/dictionaries/projects/smkpgri2malang/${locale}.json`)
+  ).default;
 
   return {
     locale,
@@ -37,6 +40,7 @@ export default getRequestConfig(async ({ requestLocale }) => {
       ...projectsMessages,
       ...edutoriumMessages,
       ...artiknesiaMessages,
+      ...smkpgri2malangMessages,
     },
   };
 });

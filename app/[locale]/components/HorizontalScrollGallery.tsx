@@ -19,7 +19,7 @@ export default function HorizontalScrollGallery() {
   const t = useTranslations("projects");
 
   // Jumlah project — sesuaikan dengan jumlah data yang kamu punya
-  const projectCount = 2;
+  const projectCount = 3;
 
   const projects: Project[] = Array.from({ length: projectCount })
     .map((_, i) => {
