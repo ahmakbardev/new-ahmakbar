@@ -1,0 +1,126 @@
+{
+  "artiknesia": {
+    "title": "Artiknesia",
+    "description": "A curated digital space to explore, exhibit, and experience the beauty of Indonesian contemporary art.",
+    "cta": "Explore Exhibitions",
+    "demoLabel": "View the experience →",
+    "targetUrl": "https://artiknesia.com/",
+    "heroImage": "/projects/artiknesia.webp",
+    "color": {
+      "primary": "[#DFBE65]",
+      "hex": "#DFBE65",
+      "gradient": {
+        "from": "#DFBE65",
+        "to": "#C1983A"
+      }
+    },
+    "slides": [
+      {
+        "image": "/projects/laptop/artiknesia1.png",
+        "label": "Main Exhibition Hall",
+        "link": "/projects/artiknesia/hall"
+      },
+      {
+        "image": "/projects/laptop/artiknesia2.png",
+        "label": "Artist Dashboard",
+        "link": "/projects/artiknesia/landing"
+      }
+    ],
+    "projectTimeline": {
+      "title": "Exhibition Work Process",
+      "subtitle": "Project Timeline",
+      "steps": [
+        {
+          "icon": "user",
+          "title": "Curatorial Discussion",
+          "description": "Collaborating with curators and artists to define the narrative, flow, and featured works of each exhibition."
+        },
+        {
+          "icon": "lightbulb",
+          "title": "Experience Planning",
+          "description": "Designing immersive digital exhibition spaces that evoke emotion and cultural reflection."
+        },
+        {
+          "icon": "layers",
+          "title": "Development",
+          "description": "Building interactive modules, visual showcases, and digital engagement tools for art appreciation."
+        },
+        {
+          "icon": "smile",
+          "title": "Public Launch",
+          "description": "Delivering a seamless digital art experience that connects artists and audiences around the world."
+        }
+      ]
+    },
+    "heroSection": {
+      "title": {
+        "pre": "Step into the",
+        "highlight": "World of Art",
+        "post": "digitally"
+      },
+      "description": "Artiknesia isn’t just a platform. It’s a gateway into stories, colors, and voices of artists across Indonesia. Discover curated exhibitions, explore artist profiles, and immerse yourself in a cultural archive that lives online.",
+      "image": "/projects/phone/artiknesia1.webp"
+    },
+    "keyFeatures": {
+      "title": "Discover the",
+      "highlight": "Core Features",
+      "description": "Crafted to elevate digital art experience through innovation, curation, and community building.",
+      "features": [
+        {
+          "icon": "monitor-check",
+          "title": "Virtual Exhibitions",
+          "desc": "Engage with artworks in immersive digital galleries."
+        },
+        {
+          "icon": "book-open-check",
+          "title": "Curated Insights",
+          "desc": "Dive deep into artist narratives and thematic interpretations."
+        },
+        {
+          "icon": "layout-dashboard",
+          "title": "Dynamic Dashboard",
+          "desc": "Manage collections, events, and artist portfolios effortlessly."
+        },
+        {
+          "icon": "smartphone",
+          "title": "Mobile Friendly",
+          "desc": "Art exploration on any device, wherever you are."
+        },
+        {
+          "icon": "code",
+          "title": "Interactive Modules",
+          "desc": "Experience artworks through interactive storytelling and media."
+        },
+        {
+          "icon": "users",
+          "title": "Art Community",
+          "desc": "Connect with fellow art lovers, curators, and collectors."
+        }
+      ]
+    },
+    "platformSupport": {
+      "title": "Art Without Boundaries",
+      "highlight": "Universal Access",
+      "description": "Artiknesia makes it possible to access world-class digital exhibitions across devices. Art meets accessibility.",
+      "items": [
+        {
+          "icon": "monitor",
+          "title": "Desktop View",
+          "desc": "Perfect for detailed exploration and immersive gallery tours."
+        },
+        {
+          "icon": "smartphone",
+          "title": "Mobile Experience",
+          "desc": "Optimized for on-the-go visits and mobile storytelling."
+        },
+        {
+          "icon": "globe",
+          "title": "Web-Based Interface",
+          "desc": "Fully accessible from your browser — no installation needed."
+        }
+      ],
+      "image": "/projects/laptop/artiknesia.webp",
+      "cta": "Start Exploring"
+    }
+  }
+}

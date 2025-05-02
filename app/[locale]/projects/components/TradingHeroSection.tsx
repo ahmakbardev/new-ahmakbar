@@ -8,6 +8,10 @@ import { useParams } from "next/navigation";
 export default function TradingHeroSection() {
   const { slug } = useParams();
   const t = useTranslations(`${slug as string}.heroSection`);
+  const tRoot = useTranslations(slug as string); // Untuk ambil warna dari root
+
+  const gradientFrom = tRoot("color.gradient.from") || "#3B82F6"; // fallback ke blue-500
+  const gradientTo = tRoot("color.gradient.to") || "#2563EB"; // fallback ke blue-700
 
   return (
     <section className="relative w-full bg-white py-20 overflow-hidden">
@@ -16,7 +20,9 @@ export default function TradingHeroSection() {
         <div className="max-w-xl text-center lg:text-left z-10">
           <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
             {t("title.pre")} <br />
-            <span className="text-blue-500">{t("title.highlight")}</span>{" "}
+            <span style={{ color: gradientFrom }}>
+              {t("title.highlight")}
+            </span>{" "}
             {t("title.post")}
           </h1>
           <p className="text-gray-600 text-sm md:text-base">
@@ -24,9 +30,14 @@ export default function TradingHeroSection() {
           </p>
         </div>
 
-        {/* Background Biru + Mockup */}
+        {/* Background Gradient + Mockup */}
         <div className="relative w-full lg:w-[60%] mt-16 lg:mt-0">
-          <div className="bg-gradient-to-br from-blue-400 to-blue-500 rounded-l-[5rem] w-full h-[400px] lg:h-[500px]" />
+          <div
+            className="rounded-l-[5rem] w-full h-[400px] lg:h-[500px]"
+            style={{
+              backgroundImage: `linear-gradient(to bottom right, ${gradientFrom}, ${gradientTo})`,
+            }}
+          />
 
           <motion.div
             initial={{ opacity: 0, y: 50 }}

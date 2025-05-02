@@ -3,7 +3,7 @@ import { routing } from "./i18n/routing";
 import { NextRequest, NextResponse } from "next/server";
 
 // Daftar slug project yang valid
-const validSlugs = ["edutorium", "statprove"];
+const validSlugs = ["edutorium", "artiknesia", "statprove"];
 
 export function middleware(request: NextRequest) {
   const pathname = request.nextUrl.pathname; // contoh: /id/projects/edutorium

@@ -8,11 +8,11 @@
       "image": "/projects/edutorium.webp"
     },
     "1": {
-      "slug": "shop-dashboard",
-      "title": "Shop Dashboard",
-      "type": "Web App",
-      "desc": "Track sales and analytics in real-time.",
-      "image": "/designs/b.png"
+      "slug": "artiknesia",
+      "title": "ARTIKNESIA",
+      "type": "Web Apps",
+      "desc": "Digital platform for exploring exhibitions and connecting art communities.",
+      "image": "/projects/artiknesia.webp"
     }
   }
 }

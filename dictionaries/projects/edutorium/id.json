@@ -6,6 +6,14 @@
     "demoLabel": "Lihat demo →",
     "targetUrl": "https://staging.edutorium.in/",
     "heroImage": "/projects/edutorium.webp",
+    "color": {
+      "primary": "[#3B82F6]",
+      "hex": "#3B82F6",
+      "gradient": {
+        "from": "#3B82F6",
+        "to": "#2563EB"
+      }
+    },
     "slides": [
       {
         "image": "/projects/edutorium.webp",

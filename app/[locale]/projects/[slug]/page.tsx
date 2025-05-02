@@ -51,7 +51,7 @@ export default function ProjectDetailPage() {
           >
             {/* Gambar pakai next/image */}
             <Image
-              src="/projects/edutorium.webp"
+              src={t("heroImage")}
               alt="Edutorium"
               fill
               className="object-cover w-full h-full"

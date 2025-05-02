@@ -8,11 +8,11 @@
       "image": "/projects/edutorium.webp"
     },
     "1": {
-      "slug": "shop-dashboard",
-      "title": "Dashboard Toko",
+      "slug": "artiknesia",
+      "title": "ARTIKNESIA",
       "type": "Aplikasi Web",
-      "desc": "Pantau penjualan dan analitik secara real-time.",
-      "image": "/designs/b.png"
+      "desc": "Platform digital untuk menjelajahi pameran dan menghubungkan komunitas seni.",
+      "image": "/projects/artiknesia.webp"
     }
   }
 }

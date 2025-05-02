@@ -15,6 +15,9 @@ const iconMap: Record<string, React.ReactNode> = {
 export default function PlatformSection() {
   const { slug } = useParams();
   const t = useTranslations(`${slug}.platformSupport`);
+  const tRoot = useTranslations(slug as string);
+
+  const hexColor = tRoot("color.hex") || "#3B82F6";
 
   const items = Array.from({ length: 3 }, (_, i) => {
     const iconKey = t(`items.${i}.icon`);
@@ -28,9 +31,14 @@ export default function PlatformSection() {
   return (
     <section className="relative py-20 bg-white max-w-7xl mx-auto overflow-hidden">
       <div className="relative flex flex-col-reverse lg:flex-row items-center justify-between gap-10">
-        {/* Left: Blue Background & Device Images */}
+        {/* Left: Gradient Background & Image */}
         <div className="relative w-full lg:w-[50%]">
-          <div className="bg-gradient-to-br from-blue-400 to-blue-500 rounded-r-[5rem] w-full h-[400px] lg:h-[500px]" />
+          <div
+            className="rounded-r-[5rem] w-full h-[400px] lg:h-[500px]"
+            style={{
+              background: `linear-gradient(135deg, ${hexColor}80, ${hexColor})`,
+            }}
+          />
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
@@ -42,15 +50,16 @@ export default function PlatformSection() {
               alt="Platform Devices"
               width={500}
               height={400}
-              className="drop-shadow-2xl scale-[1.5]"
+              className="drop-shadow-2xl scale-[1.2]"
             />
           </motion.div>
         </div>
 
-        {/* Right: Text + Items */}
+        {/* Right: Text & Items */}
         <div className="w-full lg:w-[50%]">
           <h2 className="text-3xl md:text-4xl font-bold mb-6 text-center lg:text-left">
-            {t("title")} <span className="text-blue-500">{t("highlight")}</span>
+            {t("title")}{" "}
+            <span style={{ color: hexColor }}>{t("highlight")}</span>
           </h2>
           <p className="text-gray-600 text-sm md:text-base mb-6 text-center lg:text-left">
             {t("description")}
@@ -62,7 +71,13 @@ export default function PlatformSection() {
                 key={i}
                 className="flex items-start gap-4 bg-white border border-gray-200 shadow-sm rounded-xl p-4"
               >
-                <div className="bg-blue-100 text-blue-600 p-2 rounded-lg">
+                <div
+                  className="p-2 rounded-lg"
+                  style={{
+                    backgroundColor: `${hexColor}20`,
+                    color: hexColor,
+                  }}
+                >
                   {p.icon}
                 </div>
                 <div>
@@ -76,7 +91,8 @@ export default function PlatformSection() {
           <div className="mt-6 text-center lg:text-left">
             <button
               onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-              className="bg-blue-500 cursor-pointer hover:bg-blue-600 text-white font-semibold px-6 py-2 rounded-full text-sm shadow"
+              style={{ backgroundColor: hexColor }}
+              className="cursor-pointer text-white font-semibold px-6 py-2 rounded-full text-sm shadow"
             >
               {t("cta")}
             </button>

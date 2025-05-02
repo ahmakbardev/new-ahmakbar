@@ -1,0 +1,126 @@
+{
+  "artiknesia": {
+    "title": "Artiknesia",
+    "description": "Aplikasi web modern untuk mengeksplorasi karya seni, mengikuti pameran, dan mendukung komunitas kreatif di Indonesia.",
+    "cta": "Lihat demo sekarang!",
+    "demoLabel": "Lihat demonya →",
+    "targetUrl": "https://artiknesia.com/",
+    "heroImage": "/projects/artiknesia.webp",
+    "color": {
+      "primary": "[#DFBE65]",
+      "hex": "#DFBE65",
+      "gradient": {
+        "from": "#DFBE65",
+        "to": "#C1983A"
+      }
+    },
+    "slides": [
+      {
+        "image": "/projects/laptop/artiknesia1.png",
+        "label": "Beranda",
+        "link": "/projects/artiknesia/exhibition"
+      },
+      {
+        "image": "/projects/laptop/artiknesia2.png",
+        "label": "Dashboard Seniman",
+        "link": "/projects/artiknesia/home"
+      }
+    ],
+    "projectTimeline": {
+      "title": "Proses Pengerjaan Proyek",
+      "subtitle": "Timeline Proyek",
+      "steps": [
+        {
+          "icon": "user",
+          "title": "Diskusi Awal",
+          "description": "Menggali kebutuhan komunitas seni dan fitur yang akan menunjang kurasi dan apresiasi karya secara digital."
+        },
+        {
+          "icon": "lightbulb",
+          "title": "Perencanaan Strategis",
+          "description": "Membuat rencana desain dan sistem pemesanan serta pendaftaran karya yang mudah dan intuitif."
+        },
+        {
+          "icon": "layers",
+          "title": "Pengembangan",
+          "description": "Mengimplementasikan fitur pameran, tiket online, dan halaman seniman dengan stack teknologi modern."
+        },
+        {
+          "icon": "smile",
+          "title": "Peluncuran",
+          "description": "Meluncurkan platform yang mendukung pelaku seni dan komunitas kreatif melalui teknologi digital."
+        }
+      ]
+    },
+    "heroSection": {
+      "title": {
+        "pre": "Jelajahi masa depan",
+        "highlight": "Pameran Digital",
+        "post": "di Indonesia"
+      },
+      "description": "Dengan Artiknesia, pengalaman seni hadir di ujung jari Anda. Ikuti pameran, temui seniman, dan dukung karya lokal dari mana saja, kapan saja.",
+      "image": "/projects/phone/artiknesia1.webp"
+    },
+    "keyFeatures": {
+      "title": "Temukan",
+      "highlight": "Fitur Utama",
+      "description": "Dirancang untuk seniman dan penikmat seni dalam menyajikan, mengelola, dan mengeksplorasi karya dengan interaktif dan fleksibel.",
+      "features": [
+        {
+          "icon": "monitor-check",
+          "title": "Live Exhibition",
+          "desc": "Jelajahi pameran yang berlangsung secara daring dan real-time."
+        },
+        {
+          "icon": "book-open-check",
+          "title": "Kurasi Modular",
+          "desc": "Karya disusun dalam tema dan topik yang mudah diakses."
+        },
+        {
+          "icon": "layout-dashboard",
+          "title": "Dashboard Seniman",
+          "desc": "Kelola profil, karya, dan event langsung dari satu tempat."
+        },
+        {
+          "icon": "smartphone",
+          "title": "Responsif di Semua Perangkat",
+          "desc": "Akses platform dari ponsel, tablet, atau desktop tanpa hambatan."
+        },
+        {
+          "icon": "code",
+          "title": "Integrasi Teknologi",
+          "desc": "Teknologi modern untuk menghadirkan interaksi yang imersif."
+        },
+        {
+          "icon": "users",
+          "title": "Komunitas Terhubung",
+          "desc": "Bergabung dengan seniman dan pengunjung melalui diskusi dan kolaborasi."
+        }
+      ]
+    },
+    "platformSupport": {
+      "title": "Akses tanpa batas",
+      "highlight": "Platform Fleksibel",
+      "description": "Artiknesia memastikan pengalaman seni tetap menyenangkan di semua perangkat. Jelajahi dunia seni dengan kebebasan penuh.",
+      "items": [
+        {
+          "icon": "monitor",
+          "title": "Tampilan Desktop",
+          "desc": "Pengalaman terbaik untuk mengeksplorasi karya seni dalam tampilan layar lebar."
+        },
+        {
+          "icon": "smartphone",
+          "title": "Akses Mobile",
+          "desc": "Nikmati pameran sambil bepergian dengan responsivitas penuh."
+        },
+        {
+          "icon": "globe",
+          "title": "Berbasis Web",
+          "desc": "Tidak perlu aplikasi – akses langsung dari browser kapan saja."
+        }
+      ],
+      "image": "/projects/laptop/artiknesia.webp",
+      "cta": "Jelajahi Sekarang"
+    }
+  }
+}

@@ -24,6 +24,9 @@ export default getRequestConfig(async ({ requestLocale }) => {
   const edutoriumMessages = (
     await import(`@/dictionaries/projects/edutorium/${locale}.json`)
   ).default;
+  const artiknesiaMessages = (
+    await import(`@/dictionaries/projects/artiknesia/${locale}.json`)
+  ).default;
 
   return {
     locale,
@@ -33,6 +36,7 @@ export default getRequestConfig(async ({ requestLocale }) => {
       ...showcaseMessages,
       ...projectsMessages,
       ...edutoriumMessages,
+      ...artiknesiaMessages,
     },
   };
 });
