@@ -1,0 +1,54 @@
+{
+  "me": {
+    "akbar": {
+      "1": {
+        "label": "Dari Malang, Indonesia",
+        "text": "dengan hati penuh ide dan editor kode yang selalu terbuka."
+      },
+      "2": {
+        "label": "Berorientasi Cerita",
+        "text": "– Percaya bahwa setiap produk punya cerita yang layak untuk dibentuk."
+      },
+      "3": {
+        "label": "Pemikir Visual",
+        "text": "– Menerjemahkan ide menjadi antarmuka yang intuitif dan menyenangkan."
+      },
+      "4": {
+        "label": "",
+        "text": "Penuh semangat terhadap manusia, piksel, dan tujuan — bertenaga kopi ☕ dan rasa ingin tahu 🌌"
+      }
+    },
+    "engineer": {
+      "1": {
+        "label": "Kode dengan Tujuan",
+        "text": "– Setiap baris kode harus lebih dari sekadar fungsi — ia harus memberdayakan dan mengangkat sistem serta orang-orang di dalamnya."
+      },
+      "2": {
+        "label": "Logika bertemu Empati",
+        "text": "– Rekayasa hebat bukan cuma soal teknis, tapi tentang memahami masalah nyata dan menyelesaikannya dengan penuh kasih dan kejelasan."
+      },
+      "3": {
+        "label": "Berbasis Pengetahuan",
+        "text": "– Solusi terbaik lahir dari rasa ingin tahu. Tumbuh sebagai developer dimulai dari belajar tanpa henti."
+      },
+      "4": {
+        "label": "",
+        "text": "Menulis kode untuk manusia, bukan hanya mesin — satu commit pada satu waktu ☕"
+      }
+    },
+    "evolving": {
+      "1": {
+        "label": "Penjelajah Penuh Rasa Ingin Tahu",
+        "text": "– Terus belajar dan berinovasi."
+      },
+      "2": {
+        "label": "Alkemis Ide",
+        "text": "– Mengubah inspirasi menjadi dampak."
+      },
+      "3": {
+        "label": "",
+        "text": "Membangun versi terbaik dari segalanya — termasuk diri sendiri ✍️💡"
+      }
+    }
+  }
+}

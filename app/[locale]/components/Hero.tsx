@@ -1,11 +1,11 @@
 "use client";
 
 import Image from "next/image";
-import { SiCodeigniter, SiNextdotjs } from "react-icons/si";
+import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
 
 export default function Hero() {
   return (
-    <section className="relative group overflow-hidden bg-[#0052FF] text-white py-48 px-6 md:px-10">
+    <section className="relative group overflow-hidden z-[1] bg-[#0052FF] text-white py-48 px-6 md:px-10">
       {/* Grid background */}
       <div className="absolute md:top-[600px] xl:top-[250px] left-[50%] opacity-20 -translate-x-[50%] rotate-[10deg] md:scale-[5] xl:scale-[2]">
         <Image
@@ -71,9 +71,9 @@ export default function Hero() {
             />
             <Avatar.Fallback className="text-white text-sm">P</Avatar.Fallback>
           </Avatar.Root> */}
-          <SiCodeigniter className="text-[#ee4323] text-center text-[40px] sm:text-[50px] md:text-[60px] lg:text-[70px]" />
+          <SiTailwindcss className="text-[#38bdf8] text-center text-[40px] sm:text-[50px] md:text-[60px] lg:text-[70px]" />
           <p className="text-center text-xs mt-2">
-            <span className="text-lg font-semibold">Codeigniter</span>
+            <span className="text-lg font-semibold">Tailwind</span>
             <br />
             Popular
           </p>

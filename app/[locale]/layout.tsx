@@ -11,7 +11,7 @@ import {
 } from "next/font/google";
 import SmoothScroll from "./components/SmoothScroll";
 import CustomProgressBar from "@/components/CustomProgressBar";
-import InitialSplashScreenWithWave from "@/components/InitialSplashScreen";
+// import InitialSplashScreenWithWave from "@/components/InitialSplashScreen";
 
 const jakarta = Plus_Jakarta_Sans({
   variable: "--font-jakarta",
@@ -52,7 +52,7 @@ export default async function LocaleLayout({
       >
         <CustomProgressBar />
         <SmoothScroll />
-        <InitialSplashScreenWithWave />
+        {/* <InitialSplashScreenWithWave /> */}
         <NextIntlClientProvider>
           <Header />
           {children}

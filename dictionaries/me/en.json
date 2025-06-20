@@ -1,0 +1,54 @@
+{
+  "me": {
+    "akbar": {
+      "1": {
+        "label": "From Malang, Indonesia",
+        "text": "with a heart full of ideas and a code editor always open."
+      },
+      "2": {
+        "label": "Story-driven",
+        "text": "– Believes every product has a story worth shaping."
+      },
+      "3": {
+        "label": "Visual Thinker",
+        "text": "– Maps ideas into interface that feels intuitive and delightful."
+      },
+      "4": {
+        "label": "",
+        "text": "Passionate about people, pixels, and purpose — powered by coffee ☕ and curiosity 🌌"
+      }
+    },
+    "engineer": {
+      "1": {
+        "label": "Code with Purpose",
+        "text": "– Every line of code should serve more than just function — it should enable, empower, and elevate the people and systems around it."
+      },
+      "2": {
+        "label": "Logic meets Empathy",
+        "text": "– Great engineering isn’t just technical; it’s about understanding real-world pain points and solving them with compassion and clarity."
+      },
+      "3": {
+        "label": "Knowledge Driven",
+        "text": "– The best solutions come from a curious mind. I believe growth as a developer starts with relentless learning."
+      },
+      "4": {
+        "label": "",
+        "text": "Writing code for humans, not just machines — one commit at a time ☕"
+      }
+    },
+    "evolving": {
+      "1": {
+        "label": "Curious Explorer",
+        "text": "– Constantly learning & reinventing."
+      },
+      "2": {
+        "label": "Idea Alchemist",
+        "text": "– Turning inspiration into impact."
+      },
+      "3": {
+        "label": "",
+        "text": "Building better versions of everything — including myself ✍️💡"
+      }
+    }
+  }
+}

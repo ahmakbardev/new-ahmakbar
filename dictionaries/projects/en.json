@@ -4,29 +4,45 @@
       "slug": "edutorium",
       "title": "Edutorium",
       "type": "Web Apps",
-      "desc": "Modern UI kit for rapid development.",
-      "image": "/projects/edutorium.webp"
+      "desc": "Interactive toolkit for better digital learning.",
+      "image": "/projects/edutorium.webp",
+      "tooltips": [
+        { "position": "top", "text": "📱 Learning Apps" },
+        { "position": "bottom", "text": "📘 Built for seamless education flow" }
+      ]
     },
     "1": {
       "slug": "artiknesia",
       "title": "ARTIKNESIA",
       "type": "Web Apps",
-      "desc": "Digital platform for exploring exhibitions and connecting art communities.",
-      "image": "/projects/artiknesia.webp"
+      "desc": "Explore and support art through digital shows.",
+      "image": "/projects/artiknesia.webp",
+      "tooltips": [
+        { "position": "top", "text": "🎨 Art Platform" },
+        { "position": "bottom", "text": "🛍️ Showcase & sell artworks" }
+      ]
     },
     "2": {
       "slug": "smkpgri2malang",
       "title": "SMK PGRI 2 Malang",
       "type": "Institutional Website",
-      "desc": "Official school website built for better communication and digital accessibility.",
-      "image": "/projects/smkpgri2.webp"
+      "desc": "A school hub for students, staff, and updates.",
+      "image": "/projects/smkpgri2.webp",
+      "tooltips": [
+        { "position": "top", "text": "🧠 School Platform" },
+        { "position": "bottom", "text": "📚 School life & academics" }
+      ]
     },
     "3": {
       "slug": "statprove",
       "title": "Statprove",
       "type": "Digital Service",
-      "desc": "Build modern websites and digital solutions for MSMEs and professionals.",
-      "image": "/projects/statprove.webp"
+      "desc": "Smart web tools for MSMEs and pros.",
+      "image": "/projects/statprove.webp",
+      "tooltips": [
+        { "position": "top", "text": "📦 Digital Services" },
+        { "position": "bottom", "text": "🚀 Boost online services" }
+      ]
     }
   }
 }

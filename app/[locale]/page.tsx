@@ -1,15 +1,26 @@
+// import ScrollGalleryBasic from "./components/gsapScroll";
 import Hero from "./components/Hero";
-import FeatureSection from "./components/FeatureSection";
+import HorizontalScrollScene from "./components/HorizontalScrollScene";
+// import FeatureSection from "./components/FeatureSection";
+import CreativeIntroSection from "./components/CreativeIntro";
 import Showcase from "./components/Showcase";
-import TestimonialGrid from "./components/Testimoni";
+import PortfolioCTA from "./components/CTA";
+import CustomCursor from "./components/cursor/CustomCursor";
+
+// import TestimonialGrid from "./components/Testimoni";
 
 export default function HomePage() {
   return (
-    <div>
+    <div className="cursor-none">
+      <CustomCursor />
       <Hero />
-      <FeatureSection />
+      <HorizontalScrollScene />
+      <CreativeIntroSection />
+      {/* <FeatureSection /> */}
+      {/* <ScrollGalleryBasic /> */}
       <Showcase />
-      <TestimonialGrid />
+      <PortfolioCTA />
+      {/* <TestimonialGrid /> */}
     </div>
   );
 }

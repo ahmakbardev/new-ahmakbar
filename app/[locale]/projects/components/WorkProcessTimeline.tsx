@@ -52,7 +52,7 @@ export default function WorkProcessTimeline() {
             >
               {step.icon}
               <div
-                className="absolute -top-2 -right-2 bg-white text-xs font-semibold w-5 h-5 flex items-center justify-center rounded-full"
+                className="absolute top-0 right-0 bg-white text-xs font-semibold w-5 h-5 flex items-center justify-center rounded-full"
                 style={{
                   border: `1px solid ${primaryColor}`,
                   color: primaryColor,
@@ -81,7 +81,7 @@ export default function WorkProcessTimeline() {
               >
                 {step.icon}
                 <div
-                  className="absolute -top-2 -right-2 bg-white text-xs font-semibold w-5 h-5 flex items-center justify-center rounded-full"
+                  className="absolute top-0 right-0 bg-white text-xs font-semibold w-5 h-5 flex items-center justify-center rounded-full"
                   style={{
                     border: `1px solid ${primaryColor}`,
                     color: primaryColor,

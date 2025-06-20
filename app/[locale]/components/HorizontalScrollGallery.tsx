@@ -114,7 +114,11 @@ export default function HorizontalScrollGallery() {
                 </motion.div>
 
                 {/* Back Card */}
-                <Link href={`/projects/${project.slug}`} className="group/card">
+                <Link
+                  href={`/projects/${project.slug}`}
+                  target="_blank"
+                  className="group/card"
+                >
                   <motion.div
                     initial={{
                       rotate: "0deg",

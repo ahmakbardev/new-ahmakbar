@@ -4,29 +4,45 @@
       "slug": "edutorium",
       "title": "Edutorium",
       "type": "Aplikasi Web",
-      "desc": "UI kit modern untuk pengembangan cepat.",
-      "image": "/projects/edutorium.webp"
+      "desc": "Toolkit interaktif untuk pengalaman belajar digital.",
+      "image": "/projects/edutorium.webp",
+      "tooltips": [
+        { "position": "top", "text": "📱 Aplikasi Belajar" },
+        { "position": "bottom", "text": "📘 Dirancang untuk platform edukasi" }
+      ]
     },
     "1": {
       "slug": "artiknesia",
       "title": "ARTIKNESIA",
       "type": "Aplikasi Web",
-      "desc": "Platform digital untuk menjelajahi pameran dan komunitas seni.",
-      "image": "/projects/artiknesia.webp"
+      "desc": "Menjelajahi seni dan terhubung lewat pameran digital.",
+      "image": "/projects/artiknesia.webp",
+      "tooltips": [
+        { "position": "top", "text": "🎨 Platform Seni" },
+        { "position": "bottom", "text": "🛍️ Jual & tampilkan karya" }
+      ]
     },
     "2": {
       "slug": "smkpgri2malang",
       "title": "SMK PGRI 2 Malang",
-      "type": "Website Sekolah",
-      "desc": "Situs resmi sekolah untuk komunikasi dan akses informasi digital.",
-      "image": "/projects/smkpgri2.webp"
+      "type": "Website Institusi",
+      "desc": "Portal sekolah untuk siswa, guru, dan info terbaru.",
+      "image": "/projects/smkpgri2.webp",
+      "tooltips": [
+        { "position": "top", "text": "🧠 Platform Sekolah" },
+        { "position": "bottom", "text": "📚 Info akademik & kegiatan" }
+      ]
     },
     "3": {
       "slug": "statprove",
       "title": "Statprove",
       "type": "Layanan Digital",
-      "desc": "Membangun situs web dan solusi digital modern untuk UMKM dan profesional.",
-      "image": "/projects/statprove.webp"
+      "desc": "Solusi web pintar untuk UMKM & profesional.",
+      "image": "/projects/statprove.webp",
+      "tooltips": [
+        { "position": "top", "text": "📦 Layanan Digital" },
+        { "position": "bottom", "text": "🚀 Perkuat servis online" }
+      ]
     }
   }
 }

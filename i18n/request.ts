@@ -20,6 +20,8 @@ export default getRequestConfig(async ({ requestLocale }) => {
   const testimonialsMessages = (
     await import(`@/dictionaries/testimonials/${locale}.json`)
   ).default;
+  const footerMessages = (await import(`@/dictionaries/footer/${locale}.json`))
+    .default;
 
   const projectsMessages = (
     await import(`@/dictionaries/projects/${locale}.json`)
@@ -36,6 +38,7 @@ export default getRequestConfig(async ({ requestLocale }) => {
   const statproveMessages = (
     await import(`@/dictionaries/projects/statprove/${locale}.json`)
   ).default;
+  const meMessages = (await import(`@/dictionaries/me/${locale}.json`)).default;
 
   return {
     locale,
@@ -44,11 +47,13 @@ export default getRequestConfig(async ({ requestLocale }) => {
       ...featureMessages,
       ...showcaseMessages,
       ...testimonialsMessages,
+      ...footerMessages,
       ...projectsMessages,
       ...edutoriumMessages,
       ...artiknesiaMessages,
       ...smkpgri2malangMessages,
       ...statproveMessages,
+      ...meMessages,
     },
   };
 });

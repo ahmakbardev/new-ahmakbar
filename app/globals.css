@@ -19,3 +19,7 @@
   --font-sniglet: var(--font-sniglet), cursive;
   --font-montserrat: var(--font-montserrat), sans-serif;
 }
+
+#scene1 {
+  margin-top: -50px !important;
+}
