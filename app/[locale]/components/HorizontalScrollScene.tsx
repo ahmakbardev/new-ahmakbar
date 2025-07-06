@@ -79,50 +79,44 @@ export default function HorizontalScrollScene() {
       scale: 0.95,
       rotate: -10,
     });
+
     const spans = text.querySelectorAll("span");
 
     const stText = ScrollTrigger.create({
       trigger: text,
       start: "top-=100 center",
       onEnter: () => {
-        gsap.fromTo(
-          badge,
-          { opacity: 0, scale: 0.95, rotate: -10 },
-          {
-            opacity: 1,
-            scale: 1,
-            rotate: 18, // biar tetap miring
-            duration: 0.3,
-            ease: "power2.out",
-          },
-        );
+        gsap.to(badge, {
+          opacity: 1,
+          scale: 1,
+          rotate: 18,
+          duration: 0.4,
+          ease: "power2.out",
+        });
 
-        gsap.fromTo(
-          spans,
-          { opacity: 0, scale: 0.98 },
-          {
-            opacity: 1,
-            scale: 1,
-            stagger: 0.03,
-            duration: 0.3,
-            ease: "power2.out",
-          },
-        );
+        gsap.to(spans, {
+          opacity: 1,
+          scale: 1,
+          stagger: 0.03,
+          duration: 0.4,
+          ease: "power2.out",
+        });
 
         gsap.to(top, {
           opacity: 1,
           scale: 1,
           y: 0,
           duration: 0.6,
-          delay: 0.5,
+          delay: 0.4,
           ease: "power2.out",
         });
+
         gsap.to(bot, {
           opacity: 1,
           scale: 1,
           y: 0,
           duration: 0.6,
-          delay: 0.5,
+          delay: 0.4,
           ease: "power2.out",
         });
       },
@@ -132,20 +126,64 @@ export default function HorizontalScrollScene() {
           opacity: 0,
           scale: 0.95,
           rotate: -10,
-          duration: 0.3,
+          duration: 0.4,
+          ease: "power2.inOut",
         });
 
         gsap.to(spans, {
           opacity: 0,
           scale: 0.98,
           stagger: -0.03,
-          duration: 0.3,
+          duration: 0.4,
+          ease: "power2.inOut",
         });
 
+        gsap.to(top, {
+          opacity: 0,
+          scale: 2.5,
+          y: -100,
+          duration: 0.4,
+          ease: "power2.inOut",
+        });
+
+        gsap.to(bot, {
+          opacity: 0,
+          scale: 2.5,
+          y: 100,
+          duration: 0.4,
+          ease: "power2.inOut",
+        });
+      },
+    });
+
+    // Reset to initial state lebih awal saat scroll ke atas
+    const preResetTrigger = ScrollTrigger.create({
+      trigger: text,
+      start: "top+=200 bottom", // aktif saat benar-benar di atas
+      end: "top-=100 center",
+      onLeaveBack: () => {
         gsap.set([top, bot], {
           opacity: 0,
           scale: 2.5,
+          xPercent: 0,
           y: (i) => (i === 0 ? -100 : 100),
+        });
+
+        gsap.set(badge, {
+          opacity: 0,
+          scale: 0.95,
+          rotate: -10,
+        });
+
+        spans.forEach((el) => {
+          gsap.set(el, {
+            opacity: 0,
+            scale: 0.98,
+          });
+        });
+
+        gsap.set(outer, {
+          backgroundColor: "#0052FF",
         });
       },
     });
@@ -174,10 +212,10 @@ export default function HorizontalScrollScene() {
     });
 
     return () => {
-      // Cleanup semua trigger agar tidak crash saat kembali
       stText.kill();
       bgTrigger.kill();
       tl.kill();
+      preResetTrigger.kill(); // ✅ tambahkan ini
       ScrollTrigger.getAll().forEach((t) => t.kill());
     };
   }, []);

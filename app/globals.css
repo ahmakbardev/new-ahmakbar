@@ -20,6 +20,19 @@
   --font-montserrat: var(--font-montserrat), sans-serif;
 }
 
+.custom-cursor {
+  cursor: url("/cursor/arrow.cur"), auto;
+}
+
+button:hover,
+a:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover,
+label:hover,
+[role="button"]:hover {
+  cursor: url("/cursor/hand.cur"), pointer;
+}
+
 #scene1 {
   margin-top: -50px !important;
 }

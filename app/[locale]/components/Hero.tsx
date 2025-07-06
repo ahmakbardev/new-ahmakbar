@@ -2,10 +2,12 @@
 
 import Image from "next/image";
 import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
+import SplitText from "./SplitText";
+import ScrollDownIndicator from "./ScrollDownIndicator";
 
 export default function Hero() {
   return (
-    <section className="relative group overflow-hidden z-[1] bg-[#0052FF] text-white py-48 px-6 md:px-10">
+    <section className="relative group overflow-hidden z-[1] bg-[#0052FF] text-white py-32 xl:py-48 px-6 md:px-10">
       {/* Grid background */}
       <div className="absolute md:top-[600px] xl:top-[250px] left-[50%] opacity-20 -translate-x-[50%] rotate-[10deg] md:scale-[5] xl:scale-[2]">
         <Image
@@ -29,10 +31,54 @@ export default function Hero() {
 
       {/* Judul */}
       <div className="relative z-10 max-w-7xl mx-auto text-center space-y-2">
-        <h1 className="xxs:text-[4rem] lxs:text-[6rem] xs:text-[8rem] lsm:text-[9rem] md:text-[11rem] xl:text-[12rem] font-black font-outfit leading-none tracking-tight">
-          <span className="block">IT&apos;S TIME</span>
-          <span className="block">TO</span>
-          <span className="block">CODE!</span>
+        <h1 className="text-[2rem] xxs:text-[4rem] lxs:text-[6rem] xs:text-[8rem] lsm:text-[9rem] md:text-[11rem] xl:text-[12rem] font-black font-outfit leading-none tracking-tight">
+          <SplitText
+            text="IT'S TIME"
+            className="block pointer-events-none"
+            delay={50}
+            duration={2}
+            ease="elastic.out(1, 0.3)"
+            splitType="chars"
+            from={{ opacity: 0, y: 40 }}
+            to={{ opacity: 1, y: 0 }}
+            threshold={0.1}
+            rootMargin="-100px"
+            textAlign="center"
+            startDelay={0}
+            // onLetterAnimationComplete={handleAnimationComplete}
+          />
+          <br />
+          <SplitText
+            text="TO"
+            className="block pointer-events-none"
+            delay={150}
+            duration={2}
+            ease="elastic.out(1, 0.3)"
+            splitType="chars"
+            from={{ opacity: 0, y: 40 }}
+            to={{ opacity: 1, y: 0 }}
+            threshold={0.1}
+            rootMargin="-100px"
+            textAlign="center"
+            startDelay={0.5}
+            // onLetterAnimationComplete={handleAnimationComplete}
+          />
+          <br />
+          <SplitText
+            text="CODE!"
+            className="block pointer-events-none"
+            delay={50}
+            duration={2}
+            ease="elastic.out(1, 0.3)"
+            splitType="chars"
+            from={{ opacity: 0, y: 40 }}
+            to={{ opacity: 1, y: 0 }}
+            threshold={0.1}
+            rootMargin="-100px"
+            textAlign="center"
+            startDelay={0.7}
+            // onLetterAnimationComplete={handleAnimationComplete}
+          />
         </h1>
       </div>
 
@@ -110,6 +156,7 @@ export default function Hero() {
           </span>
         </div>
       </div>
+      <ScrollDownIndicator />
     </section>
   );
 }
