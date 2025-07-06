@@ -20,7 +20,7 @@
   --font-montserrat: var(--font-montserrat), sans-serif;
 }
 
-.custom-cursor {
+body {
   cursor: url("/cursor/arrow.cur"), auto;
 }
 
